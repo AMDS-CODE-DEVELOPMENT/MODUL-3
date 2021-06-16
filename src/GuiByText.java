@@ -13,6 +13,7 @@ public class GuiByText extends JFrame {
     }
 
     void meletakkankomponen(){
+        getContentPane().setLayout(null);
         getContentPane().add(label1);
         getContentPane().add(textField1);
 
@@ -22,6 +23,7 @@ public class GuiByText extends JFrame {
 
     public static void main(String[] args) {
         GuiByText guiByText = new GuiByText();
+        guiByText.meletakkankomponen();
         guiByText.setVisible(true);
     }
 }
